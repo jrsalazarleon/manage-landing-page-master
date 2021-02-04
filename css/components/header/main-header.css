@@ -1,0 +1,143 @@
+.main-header {
+  background-image: url(/images/svg/bg-tablet-pattern.svg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0 -110px;
+
+}
+
+.main-header .app-logo {
+  display: inline-block;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 23px 23px;
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%);
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 40px 105px;
+  box-shadow: rgba(0, 0, 0, .2) 0 200px 1000px;
+}
+
+.menu li a {
+  font-family: var(--font-vietnam);
+  font-weight: 700;
+  color: var(--dark-blue);
+  text-decoration: none;
+  line-height: 2;
+}
+
+.menu.is-hidden {
+  display: none;
+}
+
+.menu-button {
+  background-color: transparent;
+}
+
+.main-nav > a:nth-child(4) {
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .main-header {
+    background-position-x: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    background-position-x: 410px;
+    background-size: 425px 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header {
+    background-position-x: 650px;
+    background-position-y: -80px;
+    background-size: 500px 500px;
+  }
+
+  .menu.is-hidden {
+    display: flex;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 23px 50px;
+  }
+
+  .menu {
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    position: relative;
+    left: 200px;
+    top: 0;
+    width: auto;
+    display: flex;
+  }
+
+  .menu li:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .menu li a {
+    font-weight: 400;
+  }
+
+  .menu li a:hover {
+    transition: .4s;
+    border-bottom: var(--bright-red) 1px solid;
+    padding-bottom: 2.5px;
+    color: var(--bright-red);
+  }
+
+  .main-nav > a:first-child {
+    position: relative;
+    top: 10px;
+  }
+
+  .main-nav > a:nth-child(4) {
+    padding: 10px 25px;
+    background-color: var(--bright-red);
+    border-radius: 40px;
+    font-family: var(--font-vietnam);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    display: inline;
+  }
+
+  .main-nav > a:nth-child(4):hover {
+    transition: .4s;
+    background-color: var(--dark-blue);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .main-header {
+    background-position-x: 870px;
+    background-position-y: -200px;
+    background-size: 600px 600px;
+  }
+
+  .main-nav {
+    padding: 23px 150px;
+  }
+}

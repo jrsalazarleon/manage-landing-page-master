@@ -1,0 +1,127 @@
+.section-intro {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.illustration-intro {
+    align-self: center;
+    width: 325px;
+    height: 290px;
+    background-image: url(/images/svg/illustration-intro.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-intro {
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.text-intro  h1 {
+    font-family: var(--font-vietnam);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+ .text-intro  p {
+    width: 300px;
+    margin-top: 25px;
+    font-family: var(--font-vietnam);
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.bg-text-intro {
+    width: 115%;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 125px;
+    background-image: url(/images/svg/bg-tablet-pattern.svg);
+    background-size: 280px;
+    background-position: 250px 10px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.section-intro .text-intro > a {
+    margin-top: 40px;
+    padding: 15px 45px;
+    background-color: var(--bright-red);
+    border-radius: 50px;
+    box-shadow: rgba(150, 44, 18, .5) 0 7px 10px;
+    font-family: var(--font-vietnam);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 425px) {
+    .bg-text-intro {
+        height: 375px;
+        background-size: 330px;
+        background-position: 310px -30px;
+        top: 60px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .section-intro {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .illustration-intro {
+        align-self: flex-start;
+        order: 1;
+        width: 350px;
+        height: 350px;
+        background-size: contain;
+    }
+
+    .text-intro {
+        align-items: flex-start;
+        width: 350px;
+    }
+
+    .text-intro h1 {
+        width: 325px;
+        text-align: left;
+    }
+
+    .text-intro p {
+        text-align: justify;
+        width: 335px;
+    }
+
+    .bg-text-intro {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .section-intro {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .section-intro {
+        padding: 0 150px;
+    }
+
+    .section-intro .text-intro > a:hover {
+        background-color: var(--dark-blue);
+        box-shadow: rgba(35, 44, 81, .5) 0 7px 10px;
+        transition: .4s;
+    }
+}

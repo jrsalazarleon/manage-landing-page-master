@@ -1,0 +1,46 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;600;700;800&display=swap");
+
+/* Utils */
+@import "/css/base/utils.css";
+
+/* Header */
+@import "/css/components/header/main-header.css";
+
+/* Section Header */
+@import "/css/components/header/section-header.css";
+
+/* Main */
+@import "/css/components/main/main-content.css";
+
+/* Main Section */
+@import "/css/components/main/main-section.css";
+
+/* Differents List */
+@import "/css/components/main/differents-list.css";
+
+/* Main Footer */
+@import "/css/components/footer/main-footer.css";
+
+/* Social Media on Footer */
+@import "/css/components/footer/social-media.css";
+
+/* Reset */
+@import "/css/base/reset.min.css";
+
+/* Settings */
+@import "/css/base/settings.css";
+
+
+
+
+
+#root {
+    max-width: 1920px;
+    min-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
