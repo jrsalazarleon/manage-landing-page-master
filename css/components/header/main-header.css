@@ -26,6 +26,8 @@
   border-radius: 5px;
   padding: 40px 105px;
   box-shadow: rgba(0, 0, 0, .2) 0 200px 1000px;
+  width: 80%;
+  z-index: 1;
 }
 
 .menu li a {
@@ -101,7 +103,7 @@
   }
 
   .menu li a:hover {
-    transition: .4s;
+    transition: .2s;
     border-bottom: var(--bright-red) 1px solid;
     padding-bottom: 2.5px;
     color: var(--bright-red);
